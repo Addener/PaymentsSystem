@@ -3,12 +3,35 @@
 [![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat-square&logo=Django%20REST%20Framework)](https://www.django-rest-framework.org)
 [![MYSQL](https://img.shields.io/badge/-MySQL-464646?style=flat-square&logo=MYSQL)](https://www.mysql.org)
+
 ### Цель проекта:
+
 Имитация webhook от банка, путем создания backend-сервиса, который:
 
 - принимает входящие webhook-и от банка
 - обрабатывает их
 - корректно начисляет баланс организации по ИНН
+
+### Инструкция по установке:
+1. Склонировать репозиторий: 
+    ```bash
+    git clone https://github.com/Addener/PaymentsSystem.git
+    ```
+2. Создать и активировать виртуальное окружение:
+    ```bash
+    python -m venv venv
+    ```
+    ```bash
+    python venv/scripts/activate
+    ```
+3. Применить миграции:
+    ```bash
+    python manage.py migrate
+    ```
+4. Запустить проект:
+    ```bash
+    python manage.py runserver
+    ```
 
 ### POST `/api/webhook/bank/`
 
