@@ -35,7 +35,7 @@ Webhook принимает JSON следующего формата:
 
 ---
 
-##№ GET `/api/organizations/<inn>/balance/`
+### GET `/api/organizations/<inn>/balance/`
 
 Возвращает текущий баланс организации по ИНН:
 
